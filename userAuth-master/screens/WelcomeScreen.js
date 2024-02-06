@@ -11,7 +11,7 @@ function WelcomeScreen() {
   useEffect(() => {
     const getData = async () => {
       const response = await axios.get(
-        "https://authmessage-9571f-default-rtdb.firebaseio.com/message.json?auth=" +
+        "https://react-native-project-90668-default-rtdb.firebaseio.com/message.json?auth=" +
           token
       );
       setFetchedMessage(response.data);
